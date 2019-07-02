@@ -1,0 +1,162 @@
+
+
+ /* Google font*/
+ 
+ @import url('https://fonts.googleapis.com/css?family=Six+Caps');
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+  font-family: 'Montserrat', 'Arial', 'sans-serif',  'serif';
+  color: black;
+  font-weight: bolder;
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.header {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/people.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  top: 0;
+  position: sticky;
+  /* z-index: 2; */
+  font-size: 20px;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: lightgrey;
+  background-color: rgba(0,0,0, 0.2);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  top: 300px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg2-text {
+  background-color: lightgrey;
+  background-color: rgba(0,0,0, 0.4);
+  background-image:  url(img/class.jpg);
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  top: 250px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.scroll-btn {
+  bottom: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  padding: 10px 5px 10px 10px;
+  border-radius: 30px;
+}
+
+.scroll-bar span {
+  border: 2px solid white;
+  font-size: 25px;
+  border-radius: 30px;
+}
+
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+
+.footer {
+  top: 250px;
+}
+
+
+h3 {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.container-fluid {
+  color: white;
+  font-weight: bolder;
+  font-family: Montserrat;
+}
+
+.container {
+  background-color: lightgrey;
+}
+ 
+.hero {
+  background-color: lightgrey;
+}
+
+#chart1 {
+  background-color: whitesmoke;
+}
+
+
+.chartEPC {
+  position:relative;
+  display:inline-block;
+  width:110px;
+  height:110px;
+  text-align:center;
+  color:#fff;
+}
+
+.chartEPC canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index important */
+  z-index:0;
+  width:110px;
+  height:110px;
+}
+
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2; 
+  font-size: 1em; 
+  color: whitesmoke;
+}
